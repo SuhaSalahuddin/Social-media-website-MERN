@@ -1,2 +1,2 @@
 # Social-media-website-MERN
-Following a tutorial
+Following a tutorial of traversy media
