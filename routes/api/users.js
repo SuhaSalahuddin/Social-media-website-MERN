@@ -47,7 +47,7 @@ router.post("/register", (req, res) => {
     })
     .catch(error => {
       console.log("inside catch");
-      console.log("error:", error);
+      console.log("error: ", error);
     });
 });
 
