@@ -125,7 +125,7 @@ router.post(
     }
 
     // Social
-    profileFields.social = {}; //bc it's an embeded object
+    profileFields.social = {}; //bc it's an embedded object
     if (req.body.youtube) profileFields.social.youtube = req.body.youtube;
     if (req.body.twitter) profileFields.social.twitter = req.body.twitter;
     if (req.body.facebook) profileFields.social.facebook = req.body.facebook;
@@ -146,7 +146,6 @@ router.post(
           });
       } else {
         // Create
-
         // Check if handle exist
         Profile.findOne({ handle: profileFields.handle }).then(profile => {
           if (profile) {
