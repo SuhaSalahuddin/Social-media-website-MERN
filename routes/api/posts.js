@@ -130,7 +130,7 @@ router.post(
           ) {
             return res
               .status(400)
-              .json({ notliked: "You have not yet liked this post" });
+              .json({ message: "You have not yet liked this post" });
           }
 
           //Get remove index
@@ -143,7 +143,7 @@ router.post(
 
           post.save().then(post => res.json(post));
         })
-        .catch(err => res.status(404).json({ postnotfound: "No post found" }));
+        .catch(err => res.status(404).json({ message: "No post found" }));
     });
   }
 );
